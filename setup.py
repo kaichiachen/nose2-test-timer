@@ -26,7 +26,7 @@ setup(
     ],
     license='MIT',
     entry_points={
-        'nose.plugins.0.0.2': [
+        'nose.plugins.0.0.3': [
             'nose2_test_timer = nose2_test_timer.plugin:TimerPlugin',
         ]
     },
