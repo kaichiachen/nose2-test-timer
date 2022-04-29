@@ -6,27 +6,39 @@ Ported from nose-timer. Functionality should be mostly but not yet entirely the 
 
 ### Install
 
-To install the latest development version from Git
+To install the latest development version from Git::
 
     pip install git+https://github.com/kaichiachen/nose2-test-timer.git
 
-Or to install the latest from source
+Or to install the latest from source::
 
     git clone https://github.com/kaichiachen/nose2-test-timer.git
     cd nose2_test_timer
     pip install .
 
 You can also make a developer install if you plan on modifying the
-source frequently
+source frequently::
 
     pip install -e .
 
 
 ###  Usage
 
+example::
+
     nose2 -v -s ./example --plugin=nose2_test_timer.plugin --with-timer --timer-json-file './result.json' --timer-color --timer-top-n 20
 
-![](https://github.com/kaichiachen/nose2-test-timer/blob/master/images/colorexample.png?raw=true)
+
+![](./images/colorexample.png)
+
+usage::
+
+    usage: nose2 [--with-timer] [--timer-top-n TIMER_TOP_N]
+             [--timer-json-file TIMER_JSON_FILE] [--timer-ok TIMER_OK]
+             [-W TIMER_WARNING] [--timer-color]
+             [--timer-threshold TIMER_THRESHOLD]
+             [--timer-typefilter TIMER_TYPEFILTER]
+
 ### License
 
 ``nose2-test-timer`` is MIT Licensed library.
